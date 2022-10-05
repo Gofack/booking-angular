@@ -1,0 +1,14 @@
+<!-- <p>rental-listing works!</p>
+<div *ngFor="let rental of rentals">
+	{{rental.title}}
+</div> -->
+<div class="bwm-list-page">
+	<h1 class="title">Your home all around the World</h1>
+	<!-- TODO: Create custom directive in end of this section -->
+	<div class="row">
+		<div *ngFor="let rental of rentals" class="col-md-3 col-xs-12">
+			<app-rental-card [rental]="rental">
+			</app-rental-card>
+		</div>
+	</div>
+</div>

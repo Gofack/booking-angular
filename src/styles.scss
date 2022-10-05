@@ -1,1 +1,32 @@
 /* You can add global styles to this file, and also import other style files */
+@import "./assets/form.scss";
+
+$dark-red-color: #f44336;
+$dark-gray-color: #484848;
+$light-gray-color: #e9e9e9;
+
+html,
+body,
+p {
+	color: $dark-gray-color;
+}
+
+.bwm-list-page {
+	.title {
+		font-size: 30px;
+		font-weight: bold;
+		margin-bottom: 20px;
+	}
+}
+
+.type {
+	&-apartment {
+		color: blueviolet;
+	}
+	&-condo {
+		color: tomato;
+	}
+	&-house {
+		color: green;
+	}
+}
